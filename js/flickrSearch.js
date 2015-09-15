@@ -1,12 +1,24 @@
-$(document).ready(function(){
-  
-  //write your solution here...
-    
+$(document).ready(function() {
+  $('#keyword').on('keyup', function(e) {
+    if (e.keyCode == 13) {
+      $('#feed img').remove();
+      var searchKeyword = $('#keyword').val();
+      getImages(searchKeyword);
+    }
+  });
 });
 
+function getImages(searchKeyword) {
+  var url = 'https://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&api_key=2fd41b49fedfd589dc265350521ab539&tags=' + searchKeyword + '&jsoncallback=?';
+  $.getJSON(url, function(jsonData) {
+    jsonData['photos']['photo'].forEach(function(image){
+      $('#feed').append('<img src="http://farm' + image.farm + '.staticflickr.com/' + image.server + '/' + image.id + '_' + image.secret + '.jpg">');
+    })
+  });
+}
 /*
 
-API url: 
+API url:
 
 https://www.flickr.com/services/api/request.rest.html
 

@@ -4,20 +4,22 @@
 	<meta charset="utf-8">
 	<title>Flickr Query Alpha</title>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 <body>
-		
-	<h1>Flickr Query Alpha</h1>
-	
-	<input type="text" id="keyword">&nbsp;
-	<button type="button" id="search">search</button>
-	<hr>
-	
+
+	<h1>What would you like to see?</h1>
+
+	<div class="search-wrapper">
+	<input type="text" id="keyword" placeholder="find pictures">&nbsp;
+	<!-- <button type="button" id="search">search</button> -->
+	</div>
+
 	<!-- display feed -->
 	<div id="feed"></div>
-			
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/flickrSearch.js"></script>
 </body>

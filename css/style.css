@@ -1,16 +1,56 @@
 body {
 	margin:20px;
+	background: #444;
+	position: relative;
+	font-family: 'Lato', 'helvetica', 'sans-serif';
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 3em;
+	color: #fafafa;
+	text-align: center;
+	font-weight: 300;
 }
 
 #feed {
-	margin:0;
-	padding:0;
+	margin: 20px 0 0 0;
+	padding: 2%;
 }
 
-.date { 
+img {
+	background: #ebebeb;
+	padding: 5px;
+	margin: 0 2% 2% 0;
+	width: 360px;
+	height: 360px;
+  -box-shadow: 0 5px 5px 0 #333;
+	-moz-box-shadow: 0 5px 5px 0 #333;
+	-webkit-box-shadow: 0 5px 5px 0 #333;
+	border-radius: 2px;
+}
+
+.date {
 	color:#666;
+}
+
+.search-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+input {
+	font-size: 1.5em;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0;
+	font-weight: 300;
+	outline: none;
+	width: 280px;
+}
+
+button {
+	border: 0;
+	border-radius: 5px;
+	color: #444;
+	padding: 5px;
 }
