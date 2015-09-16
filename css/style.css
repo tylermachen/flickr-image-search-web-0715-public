@@ -20,13 +20,13 @@ h1 {
 img {
 	background: #ebebeb;
 	padding: 5px;
-	margin: 0 2% 2% 0;
-	width: 360px;
-	height: 360px;
-  -box-shadow: 0 5px 5px 0 #333;
-	-moz-box-shadow: 0 5px 5px 0 #333;
-	-webkit-box-shadow: 0 5px 5px 0 #333;
-	border-radius: 2px;
+	margin: 0 2% 3% 2%;
+	width: 337px;
+	height: 337px;
+  box-shadow: 0 3px 5px 0 #222;
+	-moz-box-shadow: 0 3px 5px 0 #222;
+	-webkit-box-shadow: 0 3px 5px 0 #222;
+	border-radius: 0px;
 }
 
 .date {
@@ -41,7 +41,7 @@ img {
 input {
 	font-size: 1.5em;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 2px;
 	border: 0;
 	font-weight: 300;
 	outline: none;
